@@ -1,0 +1,29 @@
+{
+  "name": "site_multipage_1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.13",
+    "daisyui": "^4.11.1",
+    "next": "14.2.3",
+    "next-sitemap": "^4.2.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^9.3.0",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
