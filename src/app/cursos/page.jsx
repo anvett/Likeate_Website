@@ -1,14 +1,28 @@
-import React from 'react'
+import React from "react";
+import CategoryLinks from "../../components/categoryLinks/CategoryLinks";
 
-export default function Cursos () {
+export default function Cursos() {
+  const cursosItems = [
+    {
+      imageSrc: "/images/servicios/cursos_grabados.webp",
+      title: "Cursos Grabados",
+      description: "Accede a nuestros cursos grabados",
+      link: "/cursos/cursos-grabados",
+      linkText: "Ver todos los cursos",
+      price: "Desde $9.99",
+    },
+    {
+      imageSrc: "/images/servicios/cursos_en_vivo.webp",
+      title: "Cursos en Vivo",
+      description: "Accede a nuestros cursos online",
+      link: "/cursos/cursos-en-vivo",
+      linkText: "Ver todos los cursos",
+      price: "Desde $39.99",
+    },
+  ];
   return (
     <div>
-        <h1>Cursos</h1>
-        <p>Lista de cursos</p>
-        <li>
-            <a href="/cursos/cursos-en-vivo">Cursos en Vivo</a>
-            <a href="/cursos/cursos-grabados">Cursos Grabados</a>
-        </li>
+      <CategoryLinks title="Nuestros Cursos" subtitle="Ofrecemos cursos online y grabados para que adquieras y actualices tus conocimientos" items={cursosItems} />;
     </div>
-  )
+  );
 }

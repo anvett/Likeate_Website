@@ -24,10 +24,59 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  @apply bg-light;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.btn-custom {
+  @apply transition ease-in duration-300 transform hover:scale-110;
+}
+
+.h1-custom {
+  @apply text-accent text-size-5 font-primary font-bold pb-spacing-2 sm:text-size-7;
+}
+
+.h2-custom {
+  @apply text-primary text-size-3 font-secondary font-semibold pb-spacing-1 pt-spacing-1 sm:text-size-5;
+}
+
+.h3-custom {
+  @apply text-secondary text-size-2 font-secondary font-semibold pb-spacing-1  sm:text-size-4;
+}
+
+.p-custom {
+  @apply text-primary text-size-1 font-secondary font-normal pb-spacing-1  sm:text-size-2;
+}
+
+.bg-services {
+  background-image: url('/images/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.h1-template {
+  @apply text-accent text-size-7 font-primary font-bold pb-spacing-2 sm:text-size-9;
+}
+
+.h2-template {
+  @apply text-secondary text-size-4 font-secondary font-semibold pb-spacing-1 pt-spacing-1 sm:text-size-6;
+}
+
+.h3-template {
+  @apply text-accent text-size-4 font-secondary font-semibold pb-spacing-1  sm:text-size-5;
+}
+
+.h4-template {
+  @apply text-primary text-size-4 font-secondary font-semibold pb-spacing-1  sm:text-size-5;
+}
+
+.li-template{
+  @apply text-primary text-size-2 font-secondary font-normal pb-spacing-1  sm:text-size-3;
 }
