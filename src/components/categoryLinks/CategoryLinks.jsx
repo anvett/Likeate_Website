@@ -12,7 +12,7 @@ const CategoryLinks = ({ title, subtitle, items }) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="border p-4 rounded-lg shadow-lg text-center bg-accent flex flex-col justify-between h-full"
+              className="border p-4 rounded-lg shadow-lg text-center bg-gradient-primary flex flex-col justify-between h-full"
             >
               <div>
                 <Image
@@ -34,7 +34,7 @@ const CategoryLinks = ({ title, subtitle, items }) => {
                 </Link>
               </div>
               <div className="mt-auto pb-spacing-3">
-                <h2 className="font-bold text-size-8 font-primary mb-spacing-2">{item.price}</h2>
+                <h2 className="text-dark font-bold text-size-8 font-primary mb-spacing-2">{item.price}</h2>
               </div>
             </div>
           ))}

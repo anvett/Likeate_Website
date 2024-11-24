@@ -4,19 +4,27 @@ import CategoryLinks from "../../components/categoryLinks/CategoryLinks";
 export default function Cursos() {
   const cursosItems = [
     {
-      imageSrc: "/images/servicios/cursos_grabados.webp",
-      title: "Cursos Grabados",
-      description: "Accede a nuestros cursos grabados",
-      link: "/cursos/cursos-grabados",
-      linkText: "Ver todos los cursos",
-      price: "Desde $9.99",
+      imageSrc: "/images/cursos/curso_marketing.png",
+      title: "Curso de Marketing Desde Cero",
+      description: "Aprende a crear estrategias de marketing digital",
+      link: "/cursos/curso-marketing",
+      linkText: "Ver detalles del curso",
+      price: "Desde $59.99",
     },
     {
-      imageSrc: "/images/servicios/cursos_en_vivo.webp",
-      title: "Cursos en Vivo",
-      description: "Accede a nuestros cursos online",
-      link: "/cursos/cursos-en-vivo",
-      linkText: "Ver todos los cursos",
+      imageSrc: "/images/cursos/curso_canva_capcut.png",
+      title: "Curso de Canva y Capcut",
+      description: "Aprende a crear contenido visual y audiovisual",
+      link: "/cursos/curso-canva",
+      linkText: "Ver detalles del curso",
+      price: "Desde $39.99",
+    },
+    {
+      imageSrc: "/images/cursos/curso_ia.png",
+      title: "Workshop de Marca y Ventas con IA",
+      description: "Aprende a utilizar la inteligencia artificial en tu estrategia de marketing",
+      link: "/cursos/curso-ia",
+      linkText: "Ver detalles del curso",
       price: "Desde $39.99",
     },
   ];

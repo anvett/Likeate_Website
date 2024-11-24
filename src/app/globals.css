@@ -42,7 +42,7 @@ body {
 }
 
 .h2-custom {
-  @apply text-primary text-size-3 font-secondary font-semibold pb-spacing-1 pt-spacing-1 sm:text-size-5;
+  @apply text-secondary text-size-3 font-secondary font-semibold pb-spacing-1 pt-spacing-1 sm:text-size-5;
 }
 
 .h3-custom {
@@ -51,6 +51,18 @@ body {
 
 .p-custom {
   @apply text-primary text-size-1 font-secondary font-normal pb-spacing-1  sm:text-size-2;
+}
+
+/* ------------------------------------------------------------------------------------------
+background variables
+------------------------------------------------------------------------------------------ */
+
+.bg-image-with-overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/images/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-services {
@@ -79,4 +91,57 @@ body {
 
 .li-template{
   @apply text-primary text-size-2 font-secondary font-normal pb-spacing-1  sm:text-size-3;
+}
+
+/* --------------------------------------------- */
+/* Gradient */
+/* --------------------------------------------- */
+
+.bg-gradient-primary {
+  @apply bg-gradient-to-br from-primary to-accent;
+}
+
+/* --------------------------------------------- */
+/* NavBar */
+/* --------------------------------------------- */
+
+.nav-link {
+  @apply hover:text-accent active:text-terciary;
+}
+
+
+/* --------------------------------------------- */
+/* Accordion Experience and Education */
+/* --------------------------------------------- */
+
+.accordion-title {
+  @apply text-size-1 sm:text-size-2; /* Fondo del encabezado */
+}
+
+.accordion-detail {
+  @apply text-size-1 py-spacing-1 sm:text-size-2; /* Detalle del acordeón */
+}
+
+/* --------------------------------------------- */
+/* Contador */
+/* --------------------------------------------- */
+
+.countdown-container {
+  @apply flex space-x-2 bg-opacity-75 rounded-md p-2 text-center;
+}
+
+.countdown-time {
+  @apply text-2xl font-semibold text-dark;
+}
+
+.countdown-label {
+  @apply text-xs text-accent;
+}
+
+.countdown-segment {
+  @apply flex flex-col items-center;
+}
+
+.countdown-expired {
+  @apply text-red-600 font-bold text-xl;
 }
