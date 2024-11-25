@@ -127,21 +127,36 @@ background variables
 /* --------------------------------------------- */
 
 .countdown-container {
-  @apply flex space-x-2 bg-opacity-75 rounded-md p-2 text-center;
+  @apply flex flex-nowrap justify-center items-center bg-opacity-75  rounded-md  text-center   ;
+  @apply space-x-2 sm:space-x-9;
+  @apply px-4 sm:px-8;
+  @apply overflow-x-auto;
 }
 
 .countdown-time {
-  @apply text-2xl font-semibold text-dark;
+  @apply text-size-8 font-bold text-light sm:text-size-20 ;
 }
 
 .countdown-label {
-  @apply text-xs text-accent;
+  @apply text-size-3 font-semibold text-light sm:text-size-10;
 }
 
 .countdown-segment {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center px-2 sm:px-4;;
 }
 
 .countdown-expired {
   @apply text-red-600 font-bold text-xl;
+}
+
+/* --------------------------------------------- */
+/* Landing title and subtitle */
+/* --------------------------------------------- */
+
+.landing-title {
+  @apply text-size-7 font-primary font-bold  pb-spacing-2 sm:text-size-9;
+}
+
+.landing-subtitle {
+  @apply text-size-3 font-secondary font-semibold  pb-spacing-1 pt-spacing-1 sm:text-size-8;
 }
