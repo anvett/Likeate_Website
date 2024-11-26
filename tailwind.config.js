@@ -24,10 +24,13 @@ module.exports = {
         'primary-hover': '#004f62',  
         'secondary-hover': '#d0a0ff',  
         'dark-hover': '#3e4345',  
+        'landing-primary': '#faff97',
+        'landing-secondary': '#e998bb',
       },
       fontFamily: {
         'primary': ['Montserrat', 'sans-serif'],
         'secondary': ['Lato', 'sans-serif'],
+        'bobby': ['Bobby Jones Soft', 'sans-serif'],
       },
       fontSize: {
         'size-1': '1rem',

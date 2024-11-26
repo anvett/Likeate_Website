@@ -16,6 +16,14 @@
   }
 }
 
+@font-face {
+  font-family: 'Bobby Jones Soft';
+  src: url('/fonts/Bobby-Jones/Bobby-Rough.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -150,13 +158,39 @@ background variables
 }
 
 /* --------------------------------------------- */
-/* Landing title and subtitle */
+/* Landing styles */
 /* --------------------------------------------- */
 
+.landing-product {
+  @apply text-size-7 font-bobby  font-bold  pb-spacing-2 sm:text-size-12;
+}
+
 .landing-title {
-  @apply text-size-7 font-primary font-bold  pb-spacing-2 sm:text-size-9;
+  @apply text-size-6 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18;
 }
 
 .landing-subtitle {
-  @apply text-size-3 font-secondary font-semibold  pb-spacing-1 pt-spacing-1 sm:text-size-8;
+  @apply text-size-2 font-secondary font-semibold  pb-spacing-1 pt-spacing-1 sm:text-size-7;
 }
+
+/* --------------------------------------------- */
+
+.btn-landing {
+  @apply bg-accent text-dark text-size-6 font-bobby text-lg font-bold px-spacing-3 py-spacing-1 sm:text-size-8 sm:py-spacing-4 sm:px-spacing-5;
+  @apply border-2 border-dotted border-black hover:bg-dark hover:text-light rounded-full ;
+  @apply flex items-start justify-center;  
+  @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
+}
+
+.btn-landing p {
+  @apply flex items-center justify-center leading-none m-0;
+}
+
+.btn-hero-1 {
+  @apply bg-landing-primary text-dark text-size-6 font-bobby text-lg font-bold px-spacing-3 py-spacing-1 sm:text-size-8 sm:py-spacing-4 sm:px-spacing-5;
+  @apply border-2 border-solid border-black rounded-full ;
+  @apply flex items-start justify-center;  
+  @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
+}
+
+/* --------------------------------------------- */
