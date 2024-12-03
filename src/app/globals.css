@@ -193,4 +193,7 @@ background variables
   @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
 }
 
+.accordion-landing-title {
+  @apply text-size-2 sm:text-size-4; /* Fondo del encabezado */
+}
 /* --------------------------------------------- */
