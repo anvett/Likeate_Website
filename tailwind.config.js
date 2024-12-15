@@ -26,6 +26,7 @@ module.exports = {
         'dark-hover': '#3e4345',  
         'landing-primary': '#faff97',
         'landing-secondary': '#e998bb',
+        'acctitle': '#662DC2',
       },
       fontFamily: {
         'primary': ['Montserrat', 'sans-serif'],

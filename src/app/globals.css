@@ -123,7 +123,7 @@ background variables
 /* --------------------------------------------- */
 
 .accordion-title {
-  @apply text-size-1 sm:text-size-2; /* Fondo del encabezado */
+  @apply text-size-1 sm:text-size-2; 
 }
 
 .accordion-detail {
@@ -194,6 +194,14 @@ background variables
 }
 
 .accordion-landing-title {
-  @apply text-size-2 sm:text-size-4; /* Fondo del encabezado */
+  @apply text-size-3 sm:text-size-6; 
+}
+
+.accordion-landing-subtitle {
+  @apply text-size-2 sm:text-size-5; 
+}
+
+.accordion-landing-detail {
+  @apply text-size-1 py-spacing-1 sm:text-size-2; /* Detalle del acordeón */
 }
 /* --------------------------------------------- */

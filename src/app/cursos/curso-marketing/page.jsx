@@ -12,15 +12,85 @@ export default function CursosEnVivo() {
     {
       title: "MODULO 1",
       subtitle: "Bienvenida y Cambio de Mentalidad",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nulla ac justo ultrices fermentum. Nullam nec nunc nec libero",
+      description: "Establece una mentalidad positiva y lista para aprender nuevas habilidades.",
       details: [
-        "Graduated with a 3.9 GPA",
-        "Completed 120 credit hours",
-        "Completed 2 internships",
+        "Introducción al curso",
+        "Importancia de la mentalidad adecuada",
+        "Objetivos de aprendizaje",
       ],
     },
-    // Otros objetos...
+    {
+      title: "MODULO 2",
+      subtitle: "Introducción al Marketing Digital",
+      description: "Domina los conceptos básicos del marketing digital para establecer una sólida base de conocimientos.",
+      details: [
+        "Conceptos clave del Marketing Digital",
+        "Estrategias iniciales",
+        "Plataformas y herramientas fundamentales",
+      ],
+    },
+    {
+      title: "MODULO 3",
+      subtitle: "Community Manager",
+      description: "Aprende a gestionar y crecer comunidades en redes sociales para diferentes marcas.",
+      details: [
+        "Roles del Community Manager",
+        "Creación y gestión de contenido",
+        "Manejo de crisis en redes sociales",
+      ],
+    },
+    {
+      title: "MODULO 4",
+      subtitle: "Ventas con Facebook e Instagram (Orgánico)",
+      description: "Optimiza tus ventas utilizando estrategias orgánicas en Facebook e Instagram.",
+      details: [
+        "Optimización de perfiles",
+        "Creación de contenido efectivo",
+        "Estrategias de engagement para ventas",
+      ],
+    },
+    {
+      title: "MODULO 5",
+      subtitle: "Ventas con Tik Tok (Orgánico)",
+      description: "Explora cómo vender de manera orgánica en Tik Tok con contenido viral y atractivo.",
+      details: [
+        "Introducción a Tik Tok",
+        "Creación de contenido viral",
+        "Estrategias de ventas en Tik Tok",
+      ],
+    },
+    {
+      title: "MODULO 6",
+      subtitle: "Campañas publicitarias con Facebook e Instagram ADS",
+      description: "Aprende a crear campañas publicitarias efectivas y optimizadas con Facebook e Instagram ADS.",
+      details: [
+        "Configuración de campañas",
+        "Segmentación y presupuesto",
+        "Optimización de anuncios",
+      ],
+    },
+    {
+      title: "MODULO 7",
+      subtitle: "Whatsapp Marketing",
+      description: "Aprovecha WhatsApp como herramienta de comunicación directa para aumentar ventas.",
+      details: [
+        "Estrategias de comunicación efectiva",
+        "Automatización con WhatsApp Business",
+        "Creación de campañas personalizadas",
+      ],
+    },
+    {
+      title: "MODULO 8",
+      subtitle: "Inteligencia Artificial",
+      description: "Descubre cómo usar la inteligencia artificial para potenciar tu estrategia de marketing.",
+      details: [
+        "Introducción a la IA en Marketing",
+        "Herramientas de automatización",
+        "Casos prácticos y estrategias avanzadas",
+      ],
+    },
   ];
+  
   return (
     <>
       {/* Countdown */}

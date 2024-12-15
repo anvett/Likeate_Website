@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+
 const AccordionContent = ({ entries }) => {
   // Variantes de animación
   const fadeIn = {
@@ -29,7 +30,7 @@ const AccordionContent = ({ entries }) => {
       {entries.map((entry, index) => (
         <motion.div
           key={index}
-          className="w-full max-w-6xl p-2 "  // Asegura que el contenedor se ajuste al ancho completo
+          className="w-full max-w-6xl p-2 " // Asegura que el contenedor se ajuste al ancho completo
           custom={index}
           initial="hidden"
           animate="visible"
@@ -43,11 +44,29 @@ const AccordionContent = ({ entries }) => {
             variants={zoomOnHover}
           >
             <input type="checkbox" className="peer" id={`toggle-${index}`} hidden />
+
+             {/* Contenedor para ícono y título */}
             <label
               htmlFor={`toggle-${index}`}
-              className="collapse-title text-base  block cursor-pointer accordion-landing-title whitespace-normal break-words text-accent font-bold"
+              className="collapse-title flex items-center gap-2 cursor-pointer whitespace-normal text-accent font-semibold"
             >
-             <strong>{entry.title}</strong>  -  {entry.subtitle}
+              <div className="flex items-center justify-center flex-shrink-0 w-16 h-16 sm:w-24 sm:h-24">
+                <Image
+                  src="/icons/check.png" // Ruta desde la carpeta public
+                  alt="Check Icon"
+                  width={80}
+                  height={80}
+                  className="w-16 h-16 sm:w-24 sm:h-24 object-contain"
+                />
+              </div>
+              <div className="text-left">
+                <strong className="block text-acctitle accordion-landing-title">
+                  {entry.title}
+                </strong>
+                <span className="text-black accordion-landing-subtitle font-secondary">
+                  {entry.subtitle}
+                </span>
+              </div>
             </label>
 
             <AnimatePresence>
@@ -60,7 +79,9 @@ const AccordionContent = ({ entries }) => {
               >
                 <ul className="list-disc pl-5">
                   {entry.details.map((detail, detailIndex) => (
-                    <li className="py-spacing-1 sm:py-spacing-2" key={detailIndex}>{detail}</li>
+                    <li className="py-spacing-1 sm:py-spacing-3" key={detailIndex}>
+                      {detail}
+                    </li>
                   ))}
                 </ul>
               </motion.div>
@@ -73,4 +94,3 @@ const AccordionContent = ({ entries }) => {
 };
 
 export default AccordionContent;
-
