@@ -166,7 +166,7 @@ background variables
 }
 
 .landing-title {
-  @apply text-size-6 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18;
+  @apply text-size-10 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18;
 }
 
 .landing-subtitle {

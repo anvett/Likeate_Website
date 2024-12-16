@@ -27,6 +27,7 @@ module.exports = {
         'landing-primary': '#faff97',
         'landing-secondary': '#e998bb',
         'acctitle': '#662DC2',
+        'landsubtitle2': '#F7B942',
       },
       fontFamily: {
         'primary': ['Montserrat', 'sans-serif'],
@@ -54,6 +55,11 @@ module.exports = {
         'size-18': '5.25rem',
         'size-19': '5.5rem',
         'size-20': '5.75rem',
+        'size-21': '6rem',
+        'size-22': '6.25rem',
+        'size-23': '6.5rem',
+        'size-24': '6.75rem',
+        'size-25': '7rem',
       },
       spacing: {
         'spacing-1': '1rem',
