@@ -73,7 +73,7 @@ const Navbar = () => {
                     <Link href="/cursos/cursos-en-vivo">Cursos en Vivo</Link>
                   </li>
                   <li>
-                    <Link href="/cursos/cursos-grabados">Cursos Grabados</Link>
+                    <Link href="/cursos/">Cursos Grabados</Link>
                   </li>
                 </ul>
               </details>
@@ -156,7 +156,7 @@ const Navbar = () => {
                   <Link href="/cursos/cursos-en-vivo">Cursos en Vivo</Link>
                 </li>
                 <li>
-                  <Link href="/cursos/cursos-grabados">Cursos Grabados</Link>
+                  <Link href="/cursos">Cursos Grabados</Link>
                 </li>
               </ul>
             </details>

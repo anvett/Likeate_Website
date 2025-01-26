@@ -8,9 +8,13 @@ import AccordionContent from "@/components/accordionContent/AccordionContent";
 import ImageGridRow from "@/components/imageGridRow/ImageGridRow";
 import WhyCourseSection from "@/components/whyCourseSection/WhyCourseSection";
 import BenefitsCourse from "@/components/benefitsCourse/BenefitsCourse";
+import CtaWithBgImage from "@/components/ctaWithBgImage/CtaWithBgImage";
+import ResumeCourse from "@/components/resumeCourse/ResumeCourse";
+import LinkCourses from "@/components/linkCourses/LinkCourses";
+import BenefitsCourseSlider from "@/components/benefitsCourseSlider/BenefitsCourseSlider";
 
 export default function CursosEnVivo() {
-  const entries = [
+  const contentEntries = [
     {
       title: "MODULO 1",
       subtitle: "Bienvenida y Cambio de Mentalidad",
@@ -125,36 +129,71 @@ export default function CursosEnVivo() {
 
   const benefitsData = [
     {
-      imageSrc: "/images/cursos/marketing/benefits1.png",
+      imageSrc: "/images/cursos/marketing/benefits1.jpeg",
       description: "Diseñar una estrategia digital para tu negocio",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits2.png",
+      imageSrc: "/images/cursos/marketing/benefits2.jpeg",
       description: "Aprender a realizar campañas publicitarias en Meta",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits3.png",
+      imageSrc: "/images/cursos/marketing/benefits3.jpeg",
       description: "Crear anuncios efectivos",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits4.png",
+      imageSrc: "/images/cursos/marketing/benefits4.jpeg",
       description: "Realizar inversión en publicidad pagada de una manera eficiente",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits5.png",
+      imageSrc: "/images/cursos/marketing/benefits5.jpeg",
       description: "Realizar estrategias sin pagar publicidad en Facebook, Instagram y Tik tok",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits6.png",
+      imageSrc: "/images/cursos/marketing/benefits6.jpeg",
       description: "Cerrar ventas por whatsapp",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits7.png",
+      imageSrc: "/images/cursos/marketing/benefits7.jpeg",
       description: "Crear un embudo de ventas para tu negocio",
     },
     {
-      imageSrc: "/images/cursos/marketing/benefits8.png",
+      imageSrc: "/images/cursos/marketing/benefits8.jpeg",
       description: "Entender la estructura de las redes sociales",
+    },
+  ];
+
+  //--------------------------------------------------------------------------------
+  // FAQ Section
+  //--------------------------------------------------------------------------------
+
+  const faqEntries = [
+    {
+      title: "¿Qué incluye el curso?",
+      subtitle: "Detalles del contenido del curso",
+      details: [
+        "El curso incluye 8 módulos completos.",
+        "Más de 120 lecciones en video.",
+        "Acceso de por vida a actualizaciones.",
+        "Bonos especiales y acceso a la comunidad exclusiva.",
+      ],
+    },
+    {
+      title: "¿Cómo accedo al curso?",
+      subtitle: "Pasos para el acceso",
+      details: [
+        "Después de la compra, recibirás un correo con las instrucciones.",
+        "Puedes acceder desde cualquier dispositivo con conexión a internet.",
+        "Soporte técnico disponible para resolver cualquier problema.",
+      ],
+    },
+    {
+      title: "¿Puedo obtener un reembolso?",
+      subtitle: "Política de reembolsos",
+      details: [
+        "Sí, ofrecemos una garantía de reembolso de 7 días.",
+        "Debes solicitarlo dentro de los primeros 7 días después de la compra.",
+        "El reembolso se procesará en un máximo de 5 días hábiles.",
+      ],
     },
   ];
 
@@ -170,7 +209,7 @@ export default function CursosEnVivo() {
           LA OFERTA DE 50% TERMINA EN
         </h2>
         <CountdownTimer
-          targetTime={new Date("2024-12-31T23:59:59")}
+          targetTime={new Date("2025-01-31T23:59:59")}
           onExpire={() => console.log("Curso finalizado")}
         />
       </section>
@@ -200,20 +239,30 @@ export default function CursosEnVivo() {
         id="Content"
         className="w-full flex justify-center bg-black pb-spacing-2 px-spacing-1 sm:px-spacing-2 lg:px-spacing-3"
       >
-        <AccordionContent entries={entries} />
+        <AccordionContent entries={contentEntries} idPrefix="content" />
       </section>
 
       {/* Price offer section */}
       <section
-        id="PriceOffer"
+        id="PriceOffer1"
         className="flex flex-col items-center justify-center bg-black py-spacing-2 sm:py-spacing-3"
       >
-        <HeroImage source="/images/cursos/marketing/price-offer.png" />
+        <CtaWithBgImage
+          backgroundImage="/images/cursos/marketing/back_cta2.jpeg"
+          title="TODO ESTO LO LLEVARÁS AL PRECIO ESPECIAL"
+          subtitle="SOLO POR SER PARTE DEL LANZAMIENTO"
+          oldPrice="$140"
+          newPrice="$70"
+          paragraph1="Esta oferta estará disponible solo por 24 horas. Después de esa fecha, "
+          paragraph2="¡El precio regresará a la normalidad!"
+          paragraph3="¡Luego no digas que no te lo dije!"
+          buttonText="Compra ahora al mejor precio"
+          buttonLink="#"
+        />
       </section>
 
       {/* Bonus section */}
       <section id="Bonus" className="bg-black min-h-screen p-spacing-3 sm:p-spacing-5">
-        {/* Título Principal */}
         <h1 className="landing-title text-light text-center mb-spacing-1 sm:mb-spacing-4">BONOS</h1>
 
         <ImageGridRow
@@ -244,11 +293,76 @@ export default function CursosEnVivo() {
 
       {/* Benefits 3 Section */}
       <section id="Benefits" className="bg-black py-spacing-3 sm:py-spacing-5">
-        <BenefitsCourse
+        <BenefitsCourseSlider
           title="Este curso 🚫"
           subtitle="NO ES PARA TI"
           message="Si no quieres conseguir los siguientes resultados"
           benefits={benefitsData}
+        />
+      </section>
+
+      {/* Price offer 2 section */}
+      <section
+        id="PriceOffer2"
+        className="flex flex-col items-center justify-center bg-black py-spacing-2 sm:py-spacing-3"
+      >
+        <CtaWithBgImage
+          backgroundImage="/images/cursos/marketing/back_cta2.jpeg"
+          title="TODO ESTO LO LLEVARÁS AL PRECIO ESPECIAL"
+          subtitle="SOLO POR SER PARTE DEL LANZAMIENTO"
+          oldPrice="$140"
+          newPrice="$70"
+          paragraph1="Esta oferta estará disponible solo por 24 horas. Después de esa fecha, "
+          paragraph2="¡El precio regresará a la normalidad!"
+          paragraph3="¡Luego no digas que no te lo dije!"
+          buttonText="Compra ahora al mejor precio"
+          buttonLink="#"
+        />
+      </section>
+
+      {/* Course Resume */}
+      <section id="CourseResume" className="bg-black py-spacing-3 sm:py-spacing-5 ">
+        <ResumeCourse
+          title="EN RESUMEN, CON EL CURSO"
+          subtitle="RECIBIRÁS:"
+          bulletPoints={[
+            "8 módulos completos con más de 120 lecciones.",
+            "Acceso al curso y actualizaciones para toda la vida.",
+            "Acceso a la comunidad exclusiva.",
+            "Todos los bonos especiales mencionados anteriormente.",
+          ]}
+          buttonText="¡COMPRA AHORA!"
+          buttonLink="/compra"
+          imageSrc="/images/cursos/marketing/resume.png"
+        />
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-spacing-6 bg-[#FFF7F0] text-light">
+        <div className="max-w-7xl mx-auto px-spacing-2 lg:px-spacing-4">
+          <h2 className="text-center font-bobby landing-title text-btn-cta-yellow mb-spacing-6">
+            Preguntas Frecuentes
+          </h2>
+
+          <AccordionContent entries={faqEntries} idPrefix="faq" />
+        </div>
+      </section>
+
+      {/* Link Courses */}
+
+      <section className="bg-black py-spacing-3 sm:py-spacing-5">
+        <LinkCourses
+          backgroundImage="/images/cursos/marketing/link-courses-back.jpeg"
+          imageSrc1="/images/cursos/marketing/link-course1.png"
+          oldPrice1="$74"
+          newPrice1="$37"
+          buttonLink1="/compra"
+          buttonText1="¡COMPRA AHORA AL MEJOR PRECIO!"
+          imageSrc2="/images/cursos/marketing/link-course2.png"
+          oldPrice2="$34"
+          newPrice2="$17"
+          buttonLink2="/compra"
+          buttonText2="¡COMPRA AHORA AL MEJOR PRECIO!"
         />
       </section>
     </>

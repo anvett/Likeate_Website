@@ -28,11 +28,12 @@ module.exports = {
         'landing-secondary': '#e998bb',
         'acctitle': '#662DC2',
         'landsubtitle2': '#F7B942',
+        'btn-cta-yellow': '#6237CF',
       },
       fontFamily: {
         'primary': ['Montserrat', 'sans-serif'],
         'secondary': ['Lato', 'sans-serif'],
-        'bobby': ['Bobby Jones Soft', 'sans-serif'],
+        'bobby': ["League Spartan", "sans-serif"],
       },
       fontSize: {
         'size-1': '1rem',
@@ -60,6 +61,11 @@ module.exports = {
         'size-23': '6.5rem',
         'size-24': '6.75rem',
         'size-25': '7rem',
+        'size-26': '7.25rem',
+        'size-27': '7.5rem',
+        'size-28': '7.75rem',
+        'size-29': '8rem',
+        'size-30': '8.25rem',
       },
       spacing: {
         'spacing-1': '1rem',
