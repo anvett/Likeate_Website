@@ -29,13 +29,13 @@ const CtaWithBgImage = ({
         {/* Price Section */}
         <div className="flex items-center mb-spacing-1">
           {/* Tachado */}
-          <span className="relative text-size-15 text-shadow-custom font-bobby font-bold text-purple-500 mr-spacing-2">
+          <span className="relative text-size-15 text-shadow-custom font-bobby font-bold text-purple-500 ml-spacing-2 sm:ml-spacing-1">
             {oldPrice}
             <span className="absolute top-1/2 left-0 w-full h-[4px] bg-black transform -translate-y-1/2 rotate-12"></span>
           </span>
 
           {/* Precio Actual */}
-          <span className="text-size-30 text-shadow-custom font-bold font-bobby text-pink-600 drop-shadow-lg">
+          <span className="text-size-30 text-shadow-custom font-bold font-bobby text-pink-600 drop-shadow-lg mr-spacing-2 sm:ml-spacing-1">
             {newPrice}
           </span>
         </div>
@@ -46,20 +46,22 @@ const CtaWithBgImage = ({
         </h2>
 
         {/* Paragraph */}
-        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 ">
+        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 px-spacing-2 sm:px-spacing-1 ">
           {paragraph1}
         </p>
-        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 ">
+        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 px-spacing-2 sm:px-spacing-1 ">
           {paragraph2}
         </p>
-        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 ">
+        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 px-spacing-2 sm:px-spacing-1 ">
           {paragraph3}
         </p>
 
         {/* Button */}
-        <a href={buttonLink} className="btn-landing-yellow">
-          {buttonText}
-        </a>
+        <div className="mb-spacing-5">
+          <a href={buttonLink} className="btn-landing-yellow">
+            {buttonText}
+          </a>
+        </div>
       </div>
     </div>
   );

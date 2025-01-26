@@ -12,7 +12,7 @@ export default function HeroImgBackg({
   return (
     <>
       <div
-        className="hero min-h-[60vh] sm:min-h-[75vh] lg:min-h-[100vh] bg-cover bg-center pb-spacing-3"
+        className="hero min-h-[70vh] sm:min-h-[80vh] lg:min-h-[100vh] bg-cover bg-center pb-spacing-3"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
@@ -27,7 +27,7 @@ export default function HeroImgBackg({
                 {buttonText}
               </Link>
             </div>
-            <p className="landing-subtitle text-dark text-center">{secondaryText}</p>
+            <p className="landing-subtitle text-dark text-center mb-spacing-5">{secondaryText}</p>
           </div>
         </div>
       </div>

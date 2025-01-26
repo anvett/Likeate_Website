@@ -169,7 +169,7 @@ background variables
 }
 
 .landing-title {
-  @apply text-size-9 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18;
+  @apply text-size-8 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18 px-spacing-2;
 }
 
 .landing-subtitle {

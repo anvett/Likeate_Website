@@ -27,9 +27,9 @@ export default function LinkCourses({
         COMPLEMENTA TU ESTRATEGIA CON
       </h1>
 
-      <div className="w-full max-w-screen-xl flex flex-col lg:flex-row items-center lg:justify-between gap-spacing-4 sm:gap-spacing-8">
+      <div className="w-full max-w-screen-xl flex flex-col lg:flex-row items-center lg:justify-between gap-spacing-4 sm:gap-spacing-8 mb-spacing-6">
         {/* Primera Columna */}
-        <div className="w-full lg:w-[48%] flex flex-col items-center text-light">
+        <div className="w-full lg:w-[48%] flex flex-col items-center text-light ">
           <Image
             src={imageSrc1}
             alt="Resumen del Curso"
