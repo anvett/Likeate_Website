@@ -19,7 +19,7 @@ export default function ImageGridRow({ leftImage, rightImage, rightTitle }) {
 
       {/* Imagen Derecha con Título */}
       <div className="flex flex-col items-center w-1/3 md:w-1/3 sm:w-2/4">
-        <h3 className="text-size-3 font-bobby font-semibold text-light pt-spacing-1 sm:text-size-9 text-center pb-spacing-1">
+        <h3 className="text-size-2  font-semibold text-light pt-spacing-1 sm:text-size-9 text-center pb-spacing-1">
           {rightTitle}
         </h3>
         <Image

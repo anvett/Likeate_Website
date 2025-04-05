@@ -220,7 +220,7 @@ export default function CursosEnVivo() {
         id="Countdown"
         className="flex flex-col items-center justify-center bg-black py-spacing-1 sm:py-spacing-2"
       >
-        <h2 className="landing-subtitle pb-spacing-3 text-yellow-400 text-center">
+        <h2 className="section-subtitle pb-spacing-3 text-yellow-400 text-center">
           LA OFERTA DE 50% TERMINA EN
         </h2>
         <CountdownTimer

@@ -1,66 +1,71 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
-const CtaWithBgImage = ({
-  backgroundImage,
-  title,
-  subtitle,
-  oldPrice,
-  newPrice,
-  paragraph1,
-  paragraph2,
-  paragraph3,
-  buttonText,
-  buttonLink,
-}) => {
+const CtaWithBgImage = ({ backgroundImage, buttonText, buttonLink }) => {
   return (
     <div
-      className="relative bg-cover bg-center w-full h-[1100px] flex items-center justify-center text-center px-spacing-4 sm:px-spacing-2"
+      className="relative bg-cover bg-center w-full h-[920px] sm:h-[1700px] lg:h-[1600px] px-spacing-2 sm:px-spacing-4"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      {/* Overlay oscuro */}
+      <div className="absolute inset-0 bg-black bg-opacity-10 z-0" />
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-light px-spacing-2">
-        <h1 className="landing-title text-landing-primary mb-spacing-1">{title}</h1>
+      {/* Contenido */}
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-light py-spacing-3 sm:py-spacing-6">
+        {/* Título */}
+        <h1 className="text-size-4 sm:text-size-14 lg:text-size-20 font-extrabold  text-yellow-300 leading-tight drop-shadow-[3px_3px_0px_#000000] sm:drop-shadow-[4px_4px_0px_#000000]">
+          TODO ESTO LO LLEVARÁS AL PRECIO ESPECIAL
+        </h1>
 
-        {/* Price Section */}
-        <div className="flex items-center mb-spacing-1">
-          {/* Tachado */}
-          <span className="relative text-size-15 text-shadow-custom font-bobby font-bold text-purple-500 ml-spacing-2 sm:ml-spacing-1">
-            {oldPrice}
-            <span className="absolute top-1/2 left-0 w-full h-[4px] bg-black transform -translate-y-1/2 rotate-12"></span>
+        {/* Precios */}
+        <div className="flex items-center justify-center gap-4 sm:gap-6 mt-spacing-1">
+          <span className="text-size-10 sm:text-size-15  font-bold line-through text-purple-600 drop-shadow-[3px_3px_0px_#000000] sm:drop-shadow-[4px_4px_0px_#000000] relative">
+            $140
+            <span className="absolute top-1/2 left-0 w-full h-[5px] bg-black transform -translate-y-1/2 rotate-12" />
           </span>
-
-          {/* Precio Actual */}
-          <span className="text-size-30 text-shadow-custom font-bold font-bobby text-pink-600 drop-shadow-lg mr-spacing-2 sm:ml-spacing-1">
-            {newPrice}
+          <span className="text-size-20 sm:text-size-30  font-extrabold text-pink-400 drop-shadow-[3px_3px_0px_#000000] sm:drop-shadow-[4px_4px_0px_#000000]">
+            $70
           </span>
         </div>
 
-        {/* Subtitle */}
-        <h2 className="text-size-4 sm:text-size-7 font-secondary font-semibold text-landing-primary mb-spacing-1">
-          {subtitle}
-        </h2>
-
-        {/* Paragraph */}
-        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 px-spacing-2 sm:px-spacing-1 ">
-          {paragraph1}
-        </p>
-        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 px-spacing-2 sm:px-spacing-1 ">
-          {paragraph2}
-        </p>
-        <p className="text-size-3 sm:text-size-5 font-secondary font-normal text-black mb-spacing-2 px-spacing-2 sm:px-spacing-1 ">
-          {paragraph3}
+        {/* Subtítulo */}
+        <p className="text-yellow-300 drop-shadow-[3px_3px_0px_#000000] sm:drop-shadow-[4px_4px_0px_#000000] text-size-4 sm:text-size-10 font-bold mt-spacing-1">
+          SOLO POR SER PARTE DEL LANZAMIENTO
         </p>
 
-        {/* Button */}
-        <div className="mb-spacing-5">
-          <a href={buttonLink} className="btn-landing-yellow">
+        {/* Párrafo explicativo */}
+        <div className="max-w-2xl mt-spacing-1">
+          <p className="text-black text-size-2 sm:text-size-7 font-medium">
+            Esta oferta estará disponible solo por 24 horas. <br />
+            Después de esa fecha, <br />
+            <strong>¡el precio regresará a la normalidad!</strong> <br />
+            ¡Luego no digas que no te lo dije!
+          </p>
+        </div>
+
+        {/* Botón */}
+        <div className="mt-spacing-3">
+          <a
+            href={buttonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-landing-yellow"
+          >
             {buttonText}
           </a>
+        </div>
+
+        {/* Imagen de medios de pago */}
+        <div className="mt-spacing-3 max-w-[500px] w-full">
+          <Image
+            src="/images/cursos/marketing/price-offer.png"
+            alt="Medios de pago"
+            width={500}
+            height={100}
+            className="w-full h-auto object-contain mx-auto"
+          />
         </div>
       </div>
     </div>

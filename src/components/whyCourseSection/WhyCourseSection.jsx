@@ -112,8 +112,8 @@ export default function WhyCourseSection({ title, subtitle, items }) {
     <div className="w-full flex flex-col items-center bg-[#FFF7F0]">
       {/* Título y Subtítulo */}
       <div className="text-center mb-6">
-        <h2 className="landing-title text-accent">{title}</h2>
-        <p className="font-bobby text-size-9 sm:text-size-12 text-landsubtitle2">
+        <h2 className="text-size-6 font-bold text-center  pb-2 sm:text-size-18 px-spacing-3 sm:px-spacing-3 text-accent">{title}</h2>
+        <p className=" text-size-4 sm:text-size-10 px-2 text-dark font-semibold">
           {subtitle}
         </p>
       </div>

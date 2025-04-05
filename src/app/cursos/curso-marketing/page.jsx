@@ -12,96 +12,175 @@ import CtaWithBgImage from "@/components/ctaWithBgImage/CtaWithBgImage";
 import ResumeCourse from "@/components/resumeCourse/ResumeCourse";
 import LinkCourses from "@/components/linkCourses/LinkCourses";
 import BenefitsCourseSlider from "@/components/benefitsCourseSlider/BenefitsCourseSlider";
+import HeroBlack2 from "@/components/heroBlack/HeroBlack2";
+import AudienceSection from "@/components/audienceSection/audienceSection";
+import FooterLanding from "@/components/footer/footerLanding";
 
 export default function CursosEnVivo() {
   const contentEntries = [
     {
-      title: "MODULO 1",
-      subtitle: "Bienvenida y Cambio de Mentalidad",
-      description: "Establece una mentalidad positiva y lista para aprender nuevas habilidades.",
+      title: "MÓDULO 1",
+      subtitle: "Bienvenida y cambio de mentalidad",
+      description: "Establece las bases para aprender con la mentalidad adecuada.",
       details: [
-        "Introducción al curso",
-        "Importancia de la mentalidad adecuada",
-        "Objetivos de aprendizaje",
+        "Bienvenida",
+        "Cambio de mentalidad",
       ],
     },
     {
-      title: "MODULO 2",
+      title: "MÓDULO 2",
       subtitle: "Introducción al Marketing Digital",
-      description:
-        "Domina los conceptos básicos del marketing digital para establecer una sólida base de conocimientos.",
+      description: "Comprende los fundamentos del marketing digital moderno.",
       details: [
-        "Conceptos clave del Marketing Digital",
-        "Estrategias iniciales",
-        "Plataformas y herramientas fundamentales",
+        "Introducción al Marketing Digital",
       ],
     },
     {
-      title: "MODULO 3",
+      title: "MÓDULO 3",
+      subtitle: "Estrategia de Marketing Digital",
+      description: "Desarrolla una estrategia digital completa desde cero.",
+      details: [
+        "Estrategia de Marketing y Ecosistema Digital",
+        "Embudo de prospección",
+        "Introducción al Tráfico Orgánico y Pago",
+        "Tráfico Orgánico",
+        "Tráfico Pago",
+        "Público Objetivo",
+        "Buyer persona",
+        "Método AIDA",
+        "Niveles de conciencia TOFU-MOFU-BOFU",
+        "Copywriting",
+        "Copy con IA",
+        "Gatillos Mentales",
+      ],
+    },
+    {
+      title: "MÓDULO 4",
       subtitle: "Community Manager",
-      description:
-        "Aprende a gestionar y crecer comunidades en redes sociales para diferentes marcas.",
+      description: "Domina herramientas y estrategias para gestionar comunidades digitales.",
       details: [
-        "Roles del Community Manager",
-        "Creación y gestión de contenido",
-        "Manejo de crisis en redes sociales",
+        "Community Manager",
+        "Herramientas de diseño",
+        "Canva - Bg Remove",
+        "Herramientas de publicación",
+        "¿Dónde encontrar material para publicar?",
+        "Tipos de contenido",
+        "Planeación de contenidos (formatos)",
+        "Frecuencia de publicación",
+        "Programación de contenido",
+        "Ecosistema de ventas",
       ],
     },
     {
-      title: "MODULO 4",
+      title: "MÓDULO 5",
       subtitle: "Ventas con Facebook e Instagram (Orgánico)",
-      description: "Optimiza tus ventas utilizando estrategias orgánicas en Facebook e Instagram.",
+      description: "Aprovecha tus redes sociales para vender sin pagar publicidad.",
       details: [
-        "Optimización de perfiles",
-        "Creación de contenido efectivo",
-        "Estrategias de engagement para ventas",
+        "Instagram algoritmos y formatos",
+        "Marca Personal VS Marca Comercial",
+        "Optimización de perfil de Instagram",
+        "Creación de Wa-link",
+        "Creación de página de enlaces con beacons",
+        "Historias destacadas",
+        "Tipos de feed",
+        "Tipos de cuentas",
+        "Introducción al plan estratégico",
+        "Estrategias de Historias 3V",
+        "Fórmula CCV",
+        "Fórmula detrás de cámaras",
+        "Estrategia de testimonios",
+        "Estrategia de storytelling",
+        "Estrategia Lifestyle",
+        "Stickers",
+        "Humanización de marca y procesos",
+        "Penalizaciones",
+        "Tips de interacción",
+        "Hashtags",
+        "Buscando contenido para utilizar",
+        "Importancia de anuncios pagos",
+        "Facebook orgánico",
+        "Estrategia de grupos en Facebook",
+        "Marketplace",
       ],
     },
     {
-      title: "MODULO 5",
+      title: "MÓDULO 6",
       subtitle: "Ventas con Tik Tok (Orgánico)",
-      description:
-        "Explora cómo vender de manera orgánica en Tik Tok con contenido viral y atractivo.",
+      description: "Conquista TikTok y aprende técnicas efectivas de venta con contenido viral.",
       details: [
-        "Introducción a Tik Tok",
-        "Creación de contenido viral",
-        "Estrategias de ventas en Tik Tok",
+        "TikTok Orgánico - ¿Qué no debemos hacer?",
+        "SEO de TikTok",
+        "Pasos para realizar SEO",
+        "Testeo TikTok",
+        "Estrategia TikTok",
+        "¿Dónde descargar contenido sin marca de agua?",
       ],
     },
     {
-      title: "MODULO 6",
-      subtitle: "Campañas publicitarias con Facebook e Instagram ADS",
-      description:
-        "Aprende a crear campañas publicitarias efectivas y optimizadas con Facebook e Instagram ADS.",
+      title: "MÓDULO 7",
+      subtitle: "Facebook e Instagram ADS",
+      description: "Aprende a crear campañas de anuncios pagados en Meta ADS.",
       details: [
+        "META ADS",
+        "Cuenta personal vs Cuenta Comercial",
+        "Activos Meta ADS",
+        "Fan page",
+        "Orden de creación",
+        "Business manager",
+        "Confirmación de correo electrónico",
+        "Creación de cuenta publicitaria y Método de pago",
+        "Vinculación de WhatsApp Business",
+        "Vinculación de activos",
+        "Objetivos de campañas",
+        "Estructura de campaña",
+        "Presupuesto de campaña",
+        "Tipos de segmentación",
+        "Tipos de campañas",
         "Configuración de campañas",
-        "Segmentación y presupuesto",
-        "Optimización de anuncios",
+        "Testeo y optimización de campañas",
+        "Métricas de campañas",
+        "¿Cómo evitar bloqueos en la cuenta publicitaria?",
+        "Spam o Fraude",
       ],
     },
     {
-      title: "MODULO 7",
+      title: "MÓDULO 8",
       subtitle: "Whatsapp Marketing",
-      description:
-        "Aprovecha WhatsApp como herramienta de comunicación directa para aumentar ventas.",
+      description: "Convierte WhatsApp en una herramienta poderosa de ventas.",
       details: [
-        "Estrategias de comunicación efectiva",
-        "Automatización con WhatsApp Business",
-        "Creación de campañas personalizadas",
+        "Introducción Whatsapp Business",
+        "Estrategia de WhatsApp Business",
+        "Configuración de WhatsApp Business",
+        "Catálogo de WhatsApp Business",
+        "Mensajes automatizados",
+        "Mensajes automatizados (práctica)",
+        "Estrategia de contactos",
+        "Grupos de WhatsApp",
+        "Listas de difusión",
+        "Canal de WhatsApp",
+        "¿Por qué vía hago las ventas?",
+        "Estrategia de estados de WhatsApp",
+        "Cierre de ventas",
       ],
     },
     {
-      title: "MODULO 8",
+      title: "MÓDULO 9",
       subtitle: "Inteligencia Artificial",
-      description:
-        "Descubre cómo usar la inteligencia artificial para potenciar tu estrategia de marketing.",
+      description: "Incorpora IA a tu estrategia y automatiza procesos para vender más.",
       details: [
-        "Introducción a la IA en Marketing",
-        "Herramientas de automatización",
-        "Casos prácticos y estrategias avanzadas",
+        "Introducción a la Inteligencia Artificial",
+        "Importancia y utilidad de la IA",
+        "Introducción a ChatGPT",
+        "Funciones - Aplicaciones - Limitaciones",
+        "¿Qué es un Prompt?",
+        "Importancia de un buen prompt",
+        "¿Cómo hacer un prompt?",
+        "Creación y recorrido de ChatGPT",
+        "ChatGPT para campañas en Facebook ADS",
       ],
     },
   ];
+  
 
   const items = [
     {
@@ -209,55 +288,45 @@ export default function CursosEnVivo() {
           LA OFERTA DE 50% TERMINA EN
         </h2>
         <CountdownTimer
-          targetTime={new Date("2025-01-31T23:59:59")}
+          targetTime={new Date("2025-04-31T23:59:59")}
           onExpire={() => console.log("Curso finalizado")}
         />
       </section>
 
       {/* Hero */}
-      <HeroImage source="/images/cursos/marketing/hero-back.png" />
+
+      <HeroImage source="/images/cursos/marketing/backcta1.jpg" />
 
       {/* Benefits 1 */}
-      <HeroImage source="/images/cursos/marketing/benefits-1.png" />
+
+      <HeroBlack />
 
       {/* CTA 1 */}
-      <div className="flex justify-start align-top ">
-        <HeroImgBackg
-          backgroundImage="/images/cursos/marketing/cta-1.jpeg"
-          mainText="¡ESTE CURSO ESTA DISEÑADO PARA TI!"
-          secondaryText="Domina el marketing digital desde cero y aumenta tus clientes sin necesidad de experiencia previa."
-          buttonText="¡Unete al curso Ahora!"
-          buttonLink="/cursos/marketing/registro"
-        />
-      </div>
+
+      <HeroBlack2 />
 
       {/* Benefits 2 */}
-      <HeroBlack />
 
       {/* Content Accordion */}
       <section
         id="Content"
-        className="w-full flex justify-center bg-black pb-spacing-2 px-spacing-1 sm:px-spacing-2 lg:px-spacing-3"
+        className="w-full flex flex-col pt-spacing-3 justify-center bg-black pb-spacing-2 px-spacing-1 sm:px-spacing-2 lg:px-spacing-3 "
       >
+        <h1 className="landing-title2 text-light text-center mb-spacing-1 sm:mb-spacing-2">
+          CONTENIDO DEL CURSO
+        </h1>
         <AccordionContent entries={contentEntries} idPrefix="content" />
       </section>
 
       {/* Price offer section */}
       <section
         id="PriceOffer1"
-        className="flex flex-col items-center justify-center bg-black py-spacing-2 sm:py-spacing-3"
+        className="flex flex-col items-center justify-center bg-black py-spacing-2 sm:py-spacing-6"
       >
         <CtaWithBgImage
           backgroundImage="/images/cursos/marketing/back_cta2.jpeg"
-          title="TODO ESTO LO LLEVARÁS AL PRECIO ESPECIAL"
-          subtitle="SOLO POR SER PARTE DEL LANZAMIENTO"
-          oldPrice="$140"
-          newPrice="$70"
-          paragraph1="Esta oferta estará disponible solo por 24 horas. Después de esa fecha, "
-          paragraph2="¡El precio regresará a la normalidad!"
-          paragraph3="¡Luego no digas que no te lo dije!"
-          buttonText="Compra ahora al mejor precio"
-          buttonLink="#"
+          buttonText="¡COMPRA AHORA AL MEJOR PRECIO!"
+          buttonLink="https://pay.hotmart.com/T95719486U?offDiscount=101297"
         />
       </section>
 
@@ -291,15 +360,8 @@ export default function CursosEnVivo() {
         />
       </section>
 
-      {/* Benefits 3 Section */}
-      <section id="Benefits" className="bg-black py-spacing-3 sm:py-spacing-5">
-        <BenefitsCourseSlider
-          title="Este curso 🚫"
-          subtitle="NO ES PARA TI"
-          message="Si no quieres conseguir los siguientes resultados"
-          benefits={benefitsData}
-        />
-      </section>
+      {/* Curso dirigido a */}
+      <AudienceSection />
 
       {/* Price offer 2 section */}
       <section
@@ -308,15 +370,8 @@ export default function CursosEnVivo() {
       >
         <CtaWithBgImage
           backgroundImage="/images/cursos/marketing/back_cta2.jpeg"
-          title="TODO ESTO LO LLEVARÁS AL PRECIO ESPECIAL"
-          subtitle="SOLO POR SER PARTE DEL LANZAMIENTO"
-          oldPrice="$140"
-          newPrice="$70"
-          paragraph1="Esta oferta estará disponible solo por 24 horas. Después de esa fecha, "
-          paragraph2="¡El precio regresará a la normalidad!"
-          paragraph3="¡Luego no digas que no te lo dije!"
-          buttonText="Compra ahora al mejor precio"
-          buttonLink="#"
+          buttonText="¡COMPRA AHORA AL MEJOR PRECIO!"
+          buttonLink="https://pay.hotmart.com/T95719486U?offDiscount=101297"
         />
       </section>
 
@@ -332,15 +387,15 @@ export default function CursosEnVivo() {
             "Todos los bonos especiales mencionados anteriormente.",
           ]}
           buttonText="¡COMPRA AHORA!"
-          buttonLink="/compra"
+          buttonLink="https://pay.hotmart.com/T95719486U?offDiscount=101297"
           imageSrc="/images/cursos/marketing/resume.png"
         />
       </section>
 
       {/* FAQ Section */}
-      <section className="py-spacing-6 bg-[#FFF7F0] text-light">
+      <section className="py-spacing-3 bg-[#FFF7F0] text-light">
         <div className="max-w-7xl mx-auto px-spacing-2 lg:px-spacing-4">
-          <h2 className="text-center font-bobby landing-title text-btn-cta-yellow mb-spacing-6">
+          <h2 className="text-center font-bobby landing-title text-btn-cta-yellow mb-spacing-1">
             Preguntas Frecuentes
           </h2>
 
@@ -350,21 +405,15 @@ export default function CursosEnVivo() {
 
       {/* Link Courses */}
 
-      <section className="bg-black py-spacing-3 sm:py-spacing-5">
+      <section className="bg-black pt-spacing-3 pb-spacing-1 sm:pt-spacing-5 sm:pb-spacing-2">
         <LinkCourses
-          backgroundImage="/images/cursos/marketing/link-courses-back.jpeg"
-          imageSrc1="/images/cursos/marketing/link-course1.png"
-          oldPrice1="$74"
-          newPrice1="$37"
-          buttonLink1="/compra"
-          buttonText1="¡COMPRA AHORA AL MEJOR PRECIO!"
-          imageSrc2="/images/cursos/marketing/link-course2.png"
-          oldPrice2="$34"
-          newPrice2="$17"
-          buttonLink2="/compra"
-          buttonText2="¡COMPRA AHORA AL MEJOR PRECIO!"
+          backgroundImage="/images/cursos/marketing/back_cta2.jpeg"
+          
         />
       </section>
+
+      {/* Footer */}
+      <FooterLanding />
     </>
   );
 }

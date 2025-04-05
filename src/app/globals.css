@@ -169,28 +169,37 @@ background variables
 }
 
 .landing-title {
-  @apply text-size-8 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18 px-spacing-2;
+  @apply text-size-6 font-bobby font-bold text-center  pb-spacing-2 sm:text-size-18 px-spacing-3 sm:px-spacing-3;
 }
 
 .landing-subtitle {
   @apply text-size-2 font-secondary font-semibold  pb-spacing-1 pt-spacing-1 sm:text-size-7;
 }
+.landing-title2 {
+  @apply text-size-4 font-secondary font-semibold  pb-spacing-1 pt-spacing-1 sm:text-size-7;
+}
 
 /* --------------------------------------------- */
 
 .btn-landing {
-  @apply bg-accent text-dark text-size-6 font-bobby text-lg font-bold px-spacing-3 py-spacing-1 sm:text-size-8 sm:py-spacing-4 sm:px-spacing-5;
+  @apply bg-accent text-dark text-size-6  text-lg font-bold px-spacing-5 py-spacing-1 sm:text-size-8 sm:py-spacing-3 sm:px-spacing-5;
   @apply border-2 border-dotted border-black hover:bg-dark hover:text-light rounded-full ;
   @apply flex items-start justify-center;  
   @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
 }
 
+.btn-landing2 {
+  @apply bg-accent text-dark text-size-1   font-bold px-spacing-1 py-spacing-1 sm:text-size-7 sm:py-spacing-4 sm:px-spacing-5;
+  @apply border-2 border-dotted border-black hover:bg-dark hover:text-light rounded-full ;
+  @apply flex items-start justify-center;  
+  @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
+}
 .btn-landing p {
   @apply flex items-center justify-center leading-none m-0;
 }
 
 .btn-landing-yellow {
-  @apply bg-btn-cta-yellow text-landing-primary text-size-6 font-bobby text-lg font-bold px-spacing-3 py-spacing-1 sm:text-size-8 sm:py-spacing-4 sm:px-spacing-5;
+  @apply bg-btn-cta-yellow text-landing-primary text-size-2   font-bold px-spacing-1 py-spacing-1 sm:text-size-8 sm:py-spacing-4 sm:px-spacing-5;
   @apply border-2 border-dotted border-black hover:bg-dark hover:text-light rounded-full ;
   @apply flex items-start justify-center;  
   @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
@@ -208,7 +217,7 @@ background variables
 }
 
 .btn-landing-linkCourses {
-  @apply bg-btn-cta-yellow text-landing-primary text-size-3 font-bobby text-lg font-bold px-spacing-1 py-spacing-2 sm:text-size-5 sm:py-spacing-3 sm:px-spacing-3;
+  @apply bg-btn-cta-yellow text-landing-primary text-size-3  text-lg font-bold px-spacing-2 py-spacing-1 sm:text-size-5 sm:py-spacing-2 sm:px-spacing-3;
   @apply border-2 border-dotted border-black hover:bg-dark hover:text-light rounded-full ;
   @apply flex items-start justify-center;  
   @apply transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95;
